@@ -10,17 +10,28 @@ main {
 
 aside {
     width: 20rem;
-    text-align center;
+    text-align: center;
 }
 
 aside img {
-    width: 200px height: auto
+    width: 200px height: auto;
 }
 
 main img {
-    width: 150px;
-    height: auto;
+    /*margin: 0 0 1rem 1rem; /* Top, Right, Bottom, Left */
+    float: right;
 
+}
+
+/* Absolute Positioning for Aside Overlay*/
+aside {
+    position: relative;
+}
+
+aside h2 {
+    position: absolute;
+    top: 47px;
+    left: 150px;
 }
 
 p {
