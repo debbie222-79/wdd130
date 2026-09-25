@@ -1,16 +1,21 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+:root {
+    --primary-color: #000;
+    --secondary-color: #fff;
+    --margin: 1rem;
+    --padding: 0;
+    --border: 1px solid #000
 }
 
-main {
-    max-width: 840px;
+h1 {
+    color: var(--primary-color);
+    color: var(--secondary-color);
+    margin: var(--margin);
+    padding: var(--padding);
+    border: var(--border);
 }
 
 aside {
-    width: 20rem;
-    text-align: center;
+    margin: var(--margin) var(--border)
 }
 
 aside img {

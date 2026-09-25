@@ -1,0 +1,119 @@
+/* 1. Define Color Palette & Font Variables */
+:root {
+    --primary-color: #004e89;
+    --secondary-color: #ff6b6b;
+    --accent1-color: #1a1a1a;
+    --accent2-color: #f7f9fb;
+    --heading-font: "Georgia", serif;
+    --body-font: "Arial", sans-serif;
+}
+
+/* 2. Header Color Styling */
+header {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+}
+
+/* 3. Global Box Model Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 4. Base Body Styling */
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+}
+
+/* 5. Page Layout Limit & Centering */
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+/* 6. Typography */
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+/* 7. Spacing for Elements */
+nav,
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
+}
+
+/* Header Adjustments */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
+    width: 100px;
+}
+
+/* Footer Adjustments & Link Decoration Removal */
+.socialmedia a {
+    text-decoration: none;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.socialmedia img {
+    width: 30px;
+    height: 30px;
+    margin-left: 8px;
+}
+
+/* 8. Hero Section Positioning & Overlays */
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.85;
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 16px;
+    border-radius: 4px;
+}
+
+.hero article img {
+    float: right;
+    width: 125px;
+    margin-left: 12px;
+    border-radius: 4px;
+}
